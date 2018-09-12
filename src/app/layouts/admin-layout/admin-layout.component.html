@@ -1,0 +1,19 @@
+<nb-layout>
+  <nb-layout-header subheader>
+    <button nbButton status="success" size="xsmall" (click)="toggle()">Toggle</button>
+    <!-- <a href="#" (click)="toggle()"><i class="nb-menu"></i>
+      </a> -->
+  </nb-layout-header>
+
+  <nb-sidebar> 
+    <nb-sidebar-header>
+      <div style="text-align:center">Sidebar Header</div> 
+    </nb-sidebar-header>
+    <nb-menu [items]="items"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    Page Content
+    <!-- <router-outlet></router-outlet> -->
+  </nb-layout-column>
+</nb-layout>
