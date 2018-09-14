@@ -8,3 +8,34 @@
     font-weight: nb-theme(font-weight-bold);
   }
 }
+
+.header-title {
+  padding-left: 16px;
+}
+
+.search-btn {
+  padding-left: 16px;
+}
+
+.logo-container {
+  align-items: center;
+  padding-left: 16px;
+}
+
+.sidebar-toggle-btn {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.user-container {
+
+  cursor: pointer;
+}
+
+nb-menu {
+  font-weight: 400 !important;
+
+  .menu-item .menu-icon {
+    font-size: 2rem !important;
+  }
+}

@@ -1,15 +1,24 @@
 <nb-layout>
-  <nb-layout-header subheader>
-    <button nbButton status="success" size="xsmall" (click)="toggle()">Toggle</button>
-    <!-- <a href="#" (click)="toggle()"><i class="nb-menu"></i>
-      </a> -->
+  <nb-layout-header fixed>
+    <div class="row logo-container">
+      <a class="sidebar-toggle-btn" (click)="toggle()"><i class="nb-menu"></i></a>
+      <div class="header-title">Angular Boostrap Nebular Starter</div> 
+      <nb-search class="search-btn" type="rotate-layout"></nb-search>
+      <div>
+        <nb-user class="user-container align-self-end" [nbContextMenu]="userMenu" [name]="user?.name" [picture]="user?.picture"></nb-user>
+      </div>
+    </div>
+    <div>
+
+    </div>
+    <!-- <button nbButton status="success" size="xsmall" (click)="toggle()">Toggle</button> -->
   </nb-layout-header>
 
   <nb-sidebar> 
-    <nb-sidebar-header>
+    <!-- <nb-sidebar-header>
       <div style="text-align:center">Sidebar Header</div> 
-    </nb-sidebar-header>
-    <nb-menu [items]="items"></nb-menu>
+    </nb-sidebar-header> -->
+    <nb-menu class="sidebar-menu" [items]="items"></nb-menu>
   </nb-sidebar>
 
   <nb-layout-column>

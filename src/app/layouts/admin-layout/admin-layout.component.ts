@@ -1,14 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NbThemeService } from '@nebular/theme/services/theme.service';
 import { NbSidebarService } from '@nebular/theme/components/sidebar/sidebar.service';
 import { NbMenuItem } from '@nebular/theme/components/menu/menu.service';
 
+import { MENU_ITEMS } from '../menu.items';
+
 @Component({
   selector: 'app-admin-layout',
   templateUrl: './admin-layout.component.html',
-  styleUrls: ['./admin-layout.component.scss']
+  styleUrls: ['./admin-layout.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AdminLayoutComponent implements OnInit {
+
+  items = MENU_ITEMS;
 
   items2: NbMenuItem[] = [
     {
@@ -21,7 +26,7 @@ export class AdminLayoutComponent implements OnInit {
     }
   ];
 
-  items = [
+  items3 = [
     {
       title: 'Profile',
       expanded: false,
@@ -49,6 +54,12 @@ export class AdminLayoutComponent implements OnInit {
       link: [],
     },
   ];
+
+  userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
+  user = {
+    name: 'Test User',
+    picture: ''
+  };
 
   constructor(
     private themeService: NbThemeService,

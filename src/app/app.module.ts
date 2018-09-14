@@ -6,7 +6,10 @@ import {
   NbMenuModule,
   NbSidebarModule,
   NbLayoutModule,
-  NbSidebarService
+  NbSidebarService,
+  NbSearchModule,
+  NbUserModule,
+  NbContextMenuModule
 } from '@nebular/theme';
 import { NbMenuInternalService, NbMenuService } from '@nebular/theme/components/menu/menu.service';
 
@@ -23,10 +26,13 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     BrowserModule,
     AppRoutingModule,
     NbThemeModule.forRoot({ name: 'default' }),
+    NbUserModule,
     NbButtonModule,
     NbSidebarModule,
     NbLayoutModule,
     NbMenuModule,
+    NbSearchModule,
+    NbContextMenuModule
   ],
   providers: [
     NbSidebarService,
