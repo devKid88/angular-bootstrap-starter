@@ -4,7 +4,7 @@
       <a class="sidebar-toggle-btn" (click)="toggle()"><i class="nb-menu"></i></a>
       <div class="header-title">Angular Boostrap Nebular Starter</div> 
       <nb-search class="search-btn" type="rotate-layout"></nb-search>
-      <div>
+      <div class="right-part-header">
         <nb-user class="user-container align-self-end" [nbContextMenu]="userMenu" [name]="user?.name" [picture]="user?.picture"></nb-user>
       </div>
     </div>
@@ -22,7 +22,11 @@
   </nb-sidebar>
 
   <nb-layout-column>
-    Page Content
+    <div class="row justify-content-end">
+      <div class="col-1">
+        Page Content
+      </div>
+    </div>
     <!-- <router-outlet></router-outlet> -->
   </nb-layout-column>
 </nb-layout>

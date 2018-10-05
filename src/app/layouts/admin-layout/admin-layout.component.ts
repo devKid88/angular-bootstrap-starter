@@ -55,7 +55,16 @@ export class AdminLayoutComponent implements OnInit {
     },
   ];
 
-  userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
+  userMenu = [
+    {
+      title: 'Profile',
+      link: '/user/list'
+    },
+    {
+      title: 'Log out',
+      link: '/user/list'
+    }
+  ];
   user = {
     name: 'Test User',
     picture: ''
