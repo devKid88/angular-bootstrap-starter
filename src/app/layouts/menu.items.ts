@@ -14,7 +14,7 @@ export const MENU_ITEMS: NbMenuItem[] =  [
   },
   {
     title: 'Users',
-    icon: 'ion-ios-people-outline',
+    icon: 'nb-person',
     link: '/user/list'
   },
   // {
